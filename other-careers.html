@@ -14,9 +14,18 @@
       <h1>Other Coding Careers</h1>
     </header>
     <nav>
-      <a href="index.html"> Home </a>
-      <a href="opportunities.html"> Web Dev Opportunities </a>
-      <a href="other-careers.html"> Other Coding Careers </a>
+      <a href="index.html">
+        <img src="icons8-home-48.png" />
+        Home
+      </a>
+      <a href="opportunities.html">
+        <img src="icons8-3d-pointer-48.png" />
+        Web Dev Opportunities
+      </a>
+      <a href="other-careers.html">
+        <img src="icons8-briefcase-48.png" />
+        Coding Careers
+      </a>
     </nav>
     <main>
       <p>Web Dev is a great start, but it's only one of many different careers in digital technologies. Here are some of the others.</p>
@@ -31,7 +40,7 @@
         <li>Cyber Security Consultant (Hacker)</li>
       </ul>
 
-      <img src="Careers.jpg" alt />
+      <img class="neves-big-image" src="Careers.jpg" alt />
     </main>
 
     <footer>
@@ -46,13 +55,14 @@
       }
 
       a {
+        display: flex;
+        align-items: center;
+        height: 40px;
         text-decoration: none;
         border-radius: 0.75em;
-        padding-left: 0.75em;
-        padding-right: 0.75em;
-        padding-top: 0.75em;
-        padding-bottom: 0.75em;
-        margin-right: 20px;
+        padding-left: 1.5em;
+        padding-right: 2em;
+        margin-right: 35px;
         color: white;
         background: #b2675e;
         border: 1px solid#b2675E;
@@ -89,6 +99,11 @@
       }
 
       img {
+        width: 30px;
+      }
+
+      .neves-big-image {
+        margin-top: 50px;
         width: 400px;
       }
 
@@ -97,6 +112,7 @@
       }
       nav {
         grid-area: n;
+        display: flex;
       }
       main {
         grid-area: m;

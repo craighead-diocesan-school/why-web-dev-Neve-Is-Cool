@@ -14,9 +14,18 @@
       <h1>Web Dev Opportunities</h1>
     </header>
     <nav>
-      <a href="index.html"> Home </a>
-      <a href="opportunities.html"> Web Dev Opportunities </a>
-      <a href="other-careers.html"> Other Coding Careers </a>
+      <a href="index.html">
+        <img src="icons8-home-48.png" />
+        Home
+      </a>
+      <a href="opportunities.html">
+        <img src="icons8-3d-pointer-48.png" />
+        Web Dev Opportunities
+      </a>
+      <a href="other-careers.html">
+        <img src="icons8-briefcase-48.png" />
+        Coding Careers
+      </a>
     </nav>
 
     <main>
@@ -29,7 +38,7 @@
         <li>You can work remotely from anywhere in the world.</li>
       </ul>
 
-      <img src="Opportunities.webp" alt />
+      <img class="neves-big-image" src="Opportunities.webp" alt />
     </main>
 
     <footer>
@@ -44,13 +53,14 @@
       }
 
       a {
+        display: flex;
+        align-items: center;
+        height: 40px;
         text-decoration: none;
         border-radius: 0.75em;
-        padding-left: 0.75em;
-        padding-right: 0.75em;
-        padding-top: 0.75em;
-        padding-bottom: 0.75em;
-        margin-right: 20px;
+        padding-left: 1.5em;
+        padding-right: 2em;
+        margin-right: 35px;
         color: white;
         background: #b2675e;
         border: 1px solid#b2675E;
@@ -87,6 +97,10 @@
       }
 
       img {
+        width: 30px;
+      }
+
+      .neves-big-image {
         width: 700px;
       }
 
@@ -95,6 +109,7 @@
       }
       nav {
         grid-area: n;
+        display: flex;
       }
       main {
         grid-area: m;
