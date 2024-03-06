@@ -8,15 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   </head>
-
   <body>
     <header>
       <h1>Why Web Dev?</h1>
     </header>
     <nav>
-      <a href="index.html"> Home </a>
-      <a href="opportunities.html"> Web Dev Opportunities </a>
-      <a href="other-careers.html"> Other Coding Careers </a>
+      <a href="index.html">
+        <img src="icons8-home-48.png" />
+        Home
+      </a>
+      <a href="opportunities.html">
+        <img src="icons8-3d-pointer-48.png" />
+        Web Dev Opportunities
+      </a>
+      <a href="other-careers.html">
+        <img src="icons8-briefcase-48.png" />
+        Coding Careers
+      </a>
     </nav>
     <main>
       <p>There are plenty of way to learn coding, but here are some reasons why we focus on web dev.</p>
@@ -28,7 +36,7 @@
         <li>Web dev has loads of transferrable skills to other areas, from project management to marketing to accounting to entrepeneurship.</li>
       </ul>
 
-      <img src="HTML5_logo_and_wordmark.svg" alt />
+      <img class="neves-big-image" src="HTML5_logo_and_wordmark.svg" alt />
     </main>
     <footer>
       <p>My Digi Tech Website - Introduction &copy; Neve2023</p>
@@ -41,13 +49,13 @@
       }
 
       a {
+        display: flex;
+        align-items: center;
+        height: 30px;
         text-decoration: none;
         border-radius: 0.75em;
-        padding-left: 0.75em;
-        padding-right: 0.75em;
-        padding-top: 0.75em;
-        padding-bottom: 0.75em;
-        margin-right: 20px;
+        padding-left: 2em;
+        padding-right: 2em;
         color: white;
         background: #b2675e;
         border: 1px solid#b2675E;
@@ -66,8 +74,8 @@
         display: grid;
         grid:
           " .    h    .  " 6em
-          " .    n    .  " 3em
-          " .    m    .  " auto
+          " .    n    .  " 6em
+          " .    m    m  " auto
           " .    .    f  " 5em
           / 1fr 12fr 2fr;
         font-family: "Chivo", sans-serif;
@@ -75,7 +83,6 @@
 
       p {
         color: #36382e;
-        margin-top: 35px;
       }
 
       ul {
@@ -84,8 +91,12 @@
       }
 
       img {
-        width: 500px;
-        margin-top: 35px;
+        width: 15px;
+      }
+
+      .neves-big-image {
+        margin-top: 50px;
+        width: 425px;
       }
 
       header {
@@ -93,6 +104,7 @@
       }
       nav {
         grid-area: n;
+        display: flex;
       }
       main {
         grid-area: m;
